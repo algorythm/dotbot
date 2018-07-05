@@ -38,3 +38,8 @@ function warning() {
 function error() {
 	echo -e "[$COLOR_RED""error""$COLOR_RESET] " $1
 }
+
+function question() {
+	# TODO: Lav metode til at spørge om spørgsmål
+	# echo -e "[$COLOR_YELLOW""?""$COLOR_RESET] " $1
+}

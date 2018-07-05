@@ -9,26 +9,28 @@
 # Include a few custom helper libraries
 source ./shlibs/print.sh
 
-# Save arguments for later use
-ARGS=()
-while [[ $# -gt 0 ]]; do
-	key="$1"
-	case $key in
-		-confonly)
-		CONFONLY=true
-		shift
-		shift
-		;;
-	esac
-done
+unameStr=`uname`
+platform="undefined"
 
-[[ $CONFONLY ]]
-if [[ $? = 0]]; then
-	echo "Only config?"
+if [[ $unameStr == "Darwin" ]]; then
+	platform="macos"
+elif [[ $unameStr == "Linux" ]]; then
+	platform="linux"
 fi
 
-# if ! sudo grep -q "%wheel	ALL=(ALL) NOPASSWD: ALL #awo-dev/dotbot" "/etc/sudoers"; then
-# 	echo "no sudo??"
-# 	sudo -v
-# fi
+showInfo() {
+	if [[ $platform == "macos" ]]; then
+		bot "I can see you are running MacOSX, good choice!"
+		running "Executing MacOS configuration script"
+		# TODO: Spørg bruger om de vil have slettet alle ikonerne i Docken
+		# defaults write com.apple.dock persistent-apps -array
+		source ./shlibs/osx.sh
+	elif [[ $platform == "linux" ]]; then
+		bot "I detected your OS as Linux, good for you!"
+	else
+		error "Your operating system, `uname`, is not supported by this script."
+		exit;
+	fi
+}
 
+showInfo

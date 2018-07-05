@@ -1,0 +1,25 @@
+huskat:
+- drag with 3 fingers
+
+sublime:
+- ikke vis skjulte filer (fx .DS_Store og .gitignore)
+- tilføj subl-kommando
+- tjek osxsh: cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+
+iterm:
+- luk iterm helt når sidste vindue lukkes
+- tema
+- powerline
+- zsh + oh-my-zsh
+
+spectacle:
+cp -r init/spectacle.json ~/Library/Application\ Support/Spectacle/Shortcuts.json 2> /dev/null
+
+Install:
+- spectacle
+- sublime
+- vscode og konfigurer den
+- google drive
+- bartender
+- hazel
+- snappy
