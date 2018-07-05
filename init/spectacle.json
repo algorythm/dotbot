@@ -44,7 +44,7 @@
 		"shortcut_name": "MoveToPreviousDisplay"
 	},
 	{
-		"shortcut_key_binding": "ctrl+alt+cmd+m",
+		"shortcut_key_binding": "ctrl+alt+cmd+up",
 		"shortcut_name": "MoveToFullscreen"
 	},
 	{
