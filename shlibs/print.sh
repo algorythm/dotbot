@@ -40,6 +40,5 @@ function error() {
 }
 
 function question() {
-	# TODO: Lav metode til at spørge om spørgsmål
-	# echo -e "[$COLOR_YELLOW""?""$COLOR_RESET] " $1
+	echo -e "[$COLOR_YELLOW""?""$COLOR_RESET] " $1
 }
