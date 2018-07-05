@@ -138,6 +138,7 @@ brew install sass/sass/sass
 brew install gcc
 brew install docker
 brew install docker-toolbox
+brew install neovim
 
 # Casks
 brew install cask
@@ -173,7 +174,7 @@ brew cask install spectacle
 
 # mas
 brew install mas
-# mas install 918858936	# Airmail 3
+mas install 918858936	# Airmail 3
 # mas install 931657367	# Calcbot
 # mas install 873245660	# Spillo
 mas install 497799835 # Xcode
