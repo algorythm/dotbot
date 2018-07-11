@@ -44,7 +44,7 @@ showInfo() {
 	fi
 }
 
-# showInfo
+showInfo
 
 bot "All applications have now been installed and configured."
 bot "I will now configure all the dotfiles. Let's start with GitHub!"
