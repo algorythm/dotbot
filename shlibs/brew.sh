@@ -43,14 +43,14 @@ brew install bash-completion2
 # Instal ZSH and oh-my-zsh
 brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-# Set default shell to zsh
-chsh -s $(which zsh)
+ Set default shell to zsh
+#chsh -s $(which zsh)
 
 # # Switch to using brew-installed bash as default shell
 # if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
 #   echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
 #   chsh -s /usr/local/bin/bash;
-fi;
+#fi;
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
@@ -152,6 +152,7 @@ brew cask install sublime-text
 brew cask install google-backup-and-sync
 brew cask install spotify
 brew cask install dotnet
+brew cask install dotnet-sdk
 brew cask install steam
 brew cask install discord
 brew cask install vlc
